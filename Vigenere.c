@@ -21,7 +21,7 @@ void CifrarVigenere(char frase[Max], char clave[Max]) {
             j++;
         }
     }
-    printf("La frase encriptada es: %s\n", frase);
+    printf("La frase cifrada es: %s\n", frase);
 }
 
 void DecifrarVigenere(char frase[Max], char clave[Max]) {
@@ -37,14 +37,14 @@ void DecifrarVigenere(char frase[Max], char clave[Max]) {
             j++;
         }
     }
-    printf("La frase desencriptada es: %s\n", frase);
+    printf("La frase decifrada es: %s\n", frase);
 }
 
 int main() {
     char frase[Max];
     char clave[Max];
 
-    printf("Ingrese la frase a encriptar: ");
+    printf("Ingrese la frase a cifrar: ");
     fgets(frase, Max, stdin);
     frase[strcspn(frase, "\n")] = '\0';  // Eliminar el salto de línea
 
